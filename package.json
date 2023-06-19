@@ -1,0 +1,19 @@
+{
+  "name": "test-publish-artifact",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Publish NPM to Artifactory",
+  "keywords": [],
+  "repository": "git@github.com:arc-mondo192/test-publish-artifact.git",
+  "license": "MIT",
+  "author": "mondo192 <31599023+mondo192@users.noreply.github.com>",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}

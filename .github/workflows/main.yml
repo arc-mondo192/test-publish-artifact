@@ -1,0 +1,16 @@
+name: "CI"
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Publish to Artifactory
+              uses: arc-mondo192/publish-artifact@master
+              with:
+                jf_password: ${{ secrets.JF_PASSWORD }}
+                jf_url: ${{ secrets.JF_URL }}
+                jf_user: ${{ secrets.JF_USER }}
