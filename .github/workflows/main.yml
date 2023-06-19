@@ -13,7 +13,7 @@ jobs:
               env:
                 JFROG_CLI_BUILD_NUMBER: ${{ github.sha }}
               with:
-                repository_type: "npm"
+                repository_type: "gem"
                 jf_password: ${{ secrets.JF_PASSWORD }}
                 jf_url: ${{ secrets.JF_URL }}
                 jf_user: ${{ secrets.JF_USER }}
