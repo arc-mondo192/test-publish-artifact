@@ -11,7 +11,7 @@ jobs:
             - name: Publish to Artifactory
               uses: arc-mondo192/publish-artifact@master
               with:
-                repository_type: "gem"
+                repository_type: "npm"
                 jf_password: ${{ secrets.JF_PASSWORD }}
                 jf_url: ${{ secrets.JF_URL }}
                 jf_user: ${{ secrets.JF_USER }}
